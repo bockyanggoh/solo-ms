@@ -26,6 +26,8 @@ import client.*;
 import client.inventory.Item;
 import client.inventory.ItemFactory;
 import client.inventory.Pet;
+import client.inventory.Equip;
+import client.inventory.InventoryType;
 import config.YamlConfig;
 import constants.game.GameConstants;
 import constants.id.MapId;
@@ -1098,5 +1100,20 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
         }
 
         return false;
+    }
+
+    public boolean addWeaponUpgradeSlot(int cap) {
+        Equip weapon = (Equip) getPlayer().getInventory(InventoryType.EQUIPPED).getItem((short) -11);
+
+        if (weapon == null) return false;
+
+        int itemType = weapon.getItemId() / 10000;
+        if (itemType < 130 || itemType > 149) return false;
+
+        if (weapon.getUpgradeSlots() >= cap) return false;
+
+        weapon.setUpgradeSlots((byte) (weapon.getUpgradeSlots() + 1));
+        getPlayer().forceUpdateItem(weapon);
+        return true;
     }
 }
