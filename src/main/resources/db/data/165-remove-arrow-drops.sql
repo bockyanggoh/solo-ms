@@ -1,0 +1,1 @@
+DELETE FROM drop_data WHERE itemid IN (2060000, 2061000);
