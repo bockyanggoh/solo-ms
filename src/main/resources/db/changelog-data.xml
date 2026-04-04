@@ -51,4 +51,8 @@
         <sqlFile path="db/data/161-admin-data.sql"/>
     </changeSet>
 
+    <changeSet id="162" author="Bock">
+        <sqlFile path="db/data/162-barry-shop.sql"/>
+    </changeSet>
+
 </databaseChangeLog>
