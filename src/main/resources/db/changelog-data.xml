@@ -51,4 +51,20 @@
         <sqlFile path="db/data/161-admin-data.sql"/>
     </changeSet>
 
+    <changeSet id="162" author="Bock">
+        <sqlFile path="db/data/162-barry-shop.sql"/>
+    </changeSet>
+
+    <changeSet id="163" author="Bock">
+        <sqlFile path="db/data/163-barry-use-shop.sql"/>
+    </changeSet>
+
+    <changeSet id="164" author="Bock">
+        <sqlFile path="db/data/164-barry-etc-shop.sql"/>
+    </changeSet>
+
+    <changeSet id="165" author="Bock">
+        <sqlFile path="db/data/165-remove-arrow-drops.sql"/>
+    </changeSet>
+
 </databaseChangeLog>

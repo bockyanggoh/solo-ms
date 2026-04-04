@@ -456,7 +456,7 @@ public class Character extends AbstractCharacterObject {
     public static Character getDefault(Client c) {
         Character ret = new Character();
         ret.client = c;
-        ret.setGMLevel(0);
+        ret.setGMLevel(1);
         ret.hp = 50;
         ret.setMaxHp(50);
         ret.mp = 5;
