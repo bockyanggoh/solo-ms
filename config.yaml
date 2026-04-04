@@ -55,7 +55,7 @@ server:
 
   #Ip Configuration
   HOST: 0.0.0.0 #WAN IPv4 address
-  LANHOST: 0.0.0.0 #LAN IPv4 address
+  LANHOST: 172.17.2.30 #LAN IPv4 address
   LOCALHOST: 127.0.0.1 #Loopback IPv4 address
   GMSERVER: false
 
