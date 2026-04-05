@@ -38,5 +38,7 @@ public class BuffMe2Command extends Command {
         Character player = c.getPlayer();
         SkillFactory.getSkill(5121009).getEffect(SkillFactory.getSkill(5121009).getMaxLevel()).applyTo(player);
         SkillFactory.getSkill(3121002).getEffect(SkillFactory.getSkill(3121002).getMaxLevel()).applyTo(player);
+        SkillFactory.getSkill(4111001).getEffect(SkillFactory.getSkill(4111001).getMaxLevel()).applyTo(player);
+        SkillFactory.getSkill(4111002).getEffect(SkillFactory.getSkill(4111002).getMaxLevel()).applyTo(player);
     }
 }

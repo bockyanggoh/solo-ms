@@ -71,4 +71,8 @@
         <sqlFile path="db/data/166-nx-card-drop-rate.sql"/>
     </changeSet>
 
+    <changeSet id="167" author="Bock">
+        <sqlFile path="db/data/167-barry-use-shop-additions.sql"/>
+    </changeSet>
+
 </databaseChangeLog>
