@@ -81,6 +81,9 @@ public class MapFactory {
             int mobTime = DataTool.getInt("mobTime", life, 0);
 
             loadLifeRaw(map, Integer.parseInt(id), type, cy, f, fh, rx0, rx1, x, y, hide, mobTime, team);
+            if (type.equals("m") && mobTime != -1) {
+                loadLifeRaw(map, Integer.parseInt(id), type, cy, f, fh, rx0, rx1, x, y, hide, mobTime, team);
+            }
         }
     }
 

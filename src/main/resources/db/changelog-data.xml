@@ -67,4 +67,8 @@
         <sqlFile path="db/data/165-remove-arrow-drops.sql"/>
     </changeSet>
 
+    <changeSet id="166" author="Bock">
+        <sqlFile path="db/data/166-nx-card-drop-rate.sql"/>
+    </changeSet>
+
 </databaseChangeLog>

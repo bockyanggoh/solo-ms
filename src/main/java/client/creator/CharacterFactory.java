@@ -26,11 +26,15 @@ import client.inventory.Inventory;
 import client.inventory.InventoryType;
 import client.inventory.Item;
 import config.YamlConfig;
+import tools.DatabaseConnection;
 import net.server.Server;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import server.ItemInformationProvider;
 import tools.PacketCreator;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 
 /**
  * @author RonanLana
@@ -93,9 +97,33 @@ public abstract class CharacterFactory {
             return -2;
         }
 
+        recipe.setMeso(50_000_000);
+
         if (!newCharacter.insertNewChar(recipe)) {
             return -2;
         }
+
+        // Grant 100k NX prepaid once per account (only on first character)
+        try (Connection con = DatabaseConnection.getConnection()) {
+            int charCount = 0;
+            try (PreparedStatement ps = con.prepareStatement("SELECT COUNT(*) FROM `characters` WHERE `accountid` = ?")) {
+                ps.setInt(1, c.getAccID());
+                try (var rs = ps.executeQuery()) {
+                    if (rs.next()) {
+                        charCount = rs.getInt(1);
+                    }
+                }
+            }
+            if (charCount == 1) {
+                try (PreparedStatement ps = con.prepareStatement("UPDATE `accounts` SET `nxPrepaid` = `nxPrepaid` + 100000 WHERE `id` = ?")) {
+                    ps.setInt(1, c.getAccID());
+                    ps.executeUpdate();
+                }
+            }
+        } catch (Exception e) {
+            log.warn("Failed to grant starting NX to account {}", c.getAccountName(), e);
+        }
+
         c.sendPacket(PacketCreator.addNewCharEntry(newCharacter));
 
         Server.getInstance().createCharacterEntry(newCharacter);
