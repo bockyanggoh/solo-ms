@@ -20,7 +20,7 @@ function action(mode, type, sel) {
 
     if (status == 0) {
         var menu = "Hey, welcome to Barry's corner store! What are you looking for?\r\n#L0#Equipment Shop#l\r\n#L1#Use Items Shop#l\r\n#L2#Etc Shop#l\r\n#L3#Exchange Mesos for NX#l";
-        if (cm.getPlayer().getFame() < 1000) {
+        if (cm.getPlayer().getFame() < 20) {
             menu += "\r\n#L4#Boost my Fame to 1,000#l";
         }
         cm.sendSimple(menu);
@@ -38,8 +38,8 @@ function action(mode, type, sel) {
             cm.sendGetNumber("How many sets would you like to exchange?\r\nRate: #r1 set = 10,000,000 mesos = 10,000 NX#k\r\nYou currently have #b" + cm.getMeso() + " mesos#k.\r\nMax: 210 sets (2,100,000,000 mesos = 2,100,000 NX).", 1, 1, 210);
         } else if (sel == 4) {
             var currentFame = cm.getPlayer().getFame();
-            if (currentFame >= 1000) {
-                cm.sendOk("You already have #b" + currentFame + " fame#k. This service is only available to adventurers with less than 1,000 fame.");
+            if (currentFame >= 20) {
+                cm.sendOk("You already have #b" + currentFame + " fame#k. This service is only available to adventurers with less than 20 fame.");
             } else {
                 cm.gainFame(1000 - currentFame);
                 cm.sendOk("Barry hooks you up! Your fame has been boosted to #b1,000#k.");
