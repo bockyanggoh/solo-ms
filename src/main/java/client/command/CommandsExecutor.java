@@ -50,6 +50,7 @@ import client.command.commands.gm0.TimeCommand;
 import client.command.commands.gm0.ToggleExpCommand;
 import client.command.commands.gm0.UptimeCommand;
 import client.command.commands.gm1.BossHpCommand;
+import client.command.commands.gm1.BuffMe2Command;
 import client.command.commands.gm1.BuffMeCommand;
 import client.command.commands.gm1.GotoCommand;
 import client.command.commands.gm1.MobHpCommand;
@@ -378,6 +379,7 @@ public class CommandsExecutor {
         addCommand("whatdropsfrom", 1, WhatDropsFromCommand.class);
         addCommand("whodrops", 1, WhoDropsCommand.class);
         addCommand("buffme", 1, BuffMeCommand.class);
+        addCommand("buffme2", 1, BuffMe2Command.class);
         addCommand("goto", 1, GotoCommand.class);
 
         commandsNameDesc.add(levelCommandsCursor);

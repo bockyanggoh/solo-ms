@@ -28,18 +28,15 @@ import client.Client;
 import client.SkillFactory;
 import client.command.Command;
 
-public class BuffMeCommand extends Command {
+public class BuffMe2Command extends Command {
     {
-        setDescription("Activate GM buffs on self.");
+        setDescription("Activate short-duration GM buffs on self.");
     }
 
     @Override
     public void execute(Client c, String[] params) {
         Character player = c.getPlayer();
-        SkillFactory.getSkill(9101001).getEffect(SkillFactory.getSkill(9101001).getMaxLevel()).applyTo(player);
-        SkillFactory.getSkill(9101002).getEffect(SkillFactory.getSkill(9101002).getMaxLevel()).applyTo(player);
-        SkillFactory.getSkill(9101008).getEffect(SkillFactory.getSkill(9101008).getMaxLevel()).applyTo(player);
-        SkillFactory.getSkill(9101003).getEffect(SkillFactory.getSkill(9101003).getMaxLevel()).applyTo(player);
-        player.healHpMp();
+        SkillFactory.getSkill(5121009).getEffect(SkillFactory.getSkill(5121009).getMaxLevel()).applyTo(player);
+        SkillFactory.getSkill(3121002).getEffect(SkillFactory.getSkill(3121002).getMaxLevel()).applyTo(player);
     }
 }
