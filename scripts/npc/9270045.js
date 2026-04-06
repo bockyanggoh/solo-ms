@@ -14,7 +14,10 @@ function action(mode, type, sel) {
     status++;
 
     if (status == 0) {
-        cm.sendOk("I'm Commando Jim. Krexel lies just ahead. Only the strongest dare face it.");
+        cm.sendSimple("I'm Commando Jim. Krexel lies just ahead. Only the strongest dare face it.\r\n#b#L0#Return to the Ruins of Krexel#l");
+    } else if (status == 1) {
+        cm.warp(541020700);
+        cm.dispose();
     } else {
         cm.dispose();
     }
