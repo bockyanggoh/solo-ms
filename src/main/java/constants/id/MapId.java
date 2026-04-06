@@ -270,6 +270,9 @@ public class MapId {
     public static final int MANONS_FOREST = 240020401;
     public static final int HOLLOWED_GROUND = 682000001;
     public static final int CURSED_SANCTUARY = 105090900;
+    public static final int BALROG_NEST = 105090200;
+    public static final int ULU_CITY_ENTRANCE = 541020000;
+    public static final int RUINS_OF_KREXEL = 541020700;
     public static final int DOOR_TO_ZAKUM = 211042300;
     public static final int DRAGON_NEST_LEFT_BEHIND = 240040511;
     public static final int HENESYS_PARK = 100000200;
