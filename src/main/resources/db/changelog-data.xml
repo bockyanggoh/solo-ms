@@ -87,4 +87,12 @@
         <sqlFile path="db/data/170-ulu-city-drops.sql"/>
     </changeSet>
 
+    <changeSet id="171" author="Bock">
+        <sqlFile path="db/data/171-barry-use-shop-vip-items.sql"/>
+    </changeSet>
+
+    <changeSet id="172" author="Bock">
+        <sqlFile path="db/data/172-barry-shop-vip-equipment.sql"/>
+    </changeSet>
+
 </databaseChangeLog>

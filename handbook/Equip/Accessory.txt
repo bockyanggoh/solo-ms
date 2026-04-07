@@ -495,3 +495,6 @@
 1022065 - Alphabet Glasses - (no description)
 1022103 - Archeologist Glasses - A pair of Archeologist Glasses received for participating in the Artifact Hunt.
 1022104 - 3D Glasses - (no description)
+1032084 - VIP Earrings - (no description)
+1122085 - VIP Necklace - (no description)
+1132040 - VIP Belt - (no description)

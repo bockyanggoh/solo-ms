@@ -55,3 +55,6 @@
 1092060 - Blue Dragon Shield - (no description)
 1092062 - Maple Girl Shield - (no description)
 1092039 - Leaf Fall - (no description)
+1092074 - VIP Warrior Shield - (no description)
+1092079 - VIP Magician Shield - (no description)
+1092084 - VIP Thief Shield - (no description)
