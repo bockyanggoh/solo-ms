@@ -1125,6 +1125,19 @@
 9420511 - Selkie Jr.
 9420512 - Mr. Anchor
 9420513 - Capt. Latanica
+9420514 - Berserkie
+9420515 - Veetron
+9420516 - Slygie
+9420517 - Petrifighter
+9420518 - Montrecer
+9420519 - Duku
+9420520 - Krexel
+9420521 - Krexel
+9420522 - Krexel
+9420523 - Bacal
+9420524 - Bacal
+9420525 - Gas Tank
+9420526 - Broken Wires
 9500000 - Making a wish to full moon
 9500001 - Making a wish to the full moon
 9500002 - Making a wish to the full moon

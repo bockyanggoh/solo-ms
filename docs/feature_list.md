@@ -150,6 +150,8 @@ Monsters, Maps & Reactors:
 * Reactors pick items up smartly, checking for an option to pick up on many-items-nearby scenario.
 * Updated many scripted portals not implementing SFX properly.
 * Updated Crimsonwood, World Tour, Nihal Desert and Neo City, enabling quest completion and game progression in these areas.
+* Added Ulu City (Singapore) maps (541020000–541020800) with full WZ imports: map layouts, mob/NPC/reactor/string/sound data, and drop tables for Berserkie (9420514, Lv.85) and Montrecer (9420518, Lv.105).
+* Krexel boss implemented as a two-phase encounter on map 541020700: Phase 1 (9420521) auto-revives into Phase 2 (9420522); at ≤30% HP Krexel summons Bacal waves (up to 10 at a time, alternating 9420523/9420524 every 15 s) via the KrexelBoss event script. Krexel Last Form drops guaranteed consumables (Power Elixir, Elixir, Reindeer Milk, Sunset Dew), Zedbug weapon, and Monster Magnet/Mana Reflection mastery books. Entry triggered via reactor 5411001 with Phase 1→2 revive logic and portal scripts in place.
 * Added world maps for Mushroom Castle, World Tour (Singapore, Malaysia and Zipangu) & Ellin Forest areas.
 * Added World Tour and Masteria continents in the world map.
 * Reviewed World Map's town/field tooltips and links from the main world map and Masteria region.
