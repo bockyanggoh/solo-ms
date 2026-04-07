@@ -83,4 +83,8 @@
         <sqlFile path="db/data/169-nx-card-100k-global-drop.sql"/>
     </changeSet>
 
+    <changeSet id="170" author="Bock">
+        <sqlFile path="db/data/170-ulu-city-drops.sql"/>
+    </changeSet>
+
 </databaseChangeLog>
